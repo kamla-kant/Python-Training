@@ -1,0 +1,14 @@
+{% extends "my_template.html"%}
+
+{% block myblock1 %}
+
+<h1>Courses you Have Enrolled :</h1><br>
+
+{% for i in enrolled_courses %}
+    <tr >
+        <td ><h2><b> {{i[1]}} </b></h2></td>
+
+    </tr>
+{% endfor %}
+<hr>
+{% endblock %}

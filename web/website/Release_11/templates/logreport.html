@@ -1,0 +1,34 @@
+{% extends "my_template.html"%}
+
+{% block myblock1 %}
+
+<h1>Server Log Report</h1>
+
+<table border="1" bgcolor="green">
+    <tr bgcolor="red">
+    <th>IP</th>
+    <th>Date</th>
+    <th>Image</th>
+    <th>URL</th>
+  </tr>
+    {% for i,j,k,l in my_data %}
+    {% if k == '5star.gif'%}
+    <tr bgcolor="yellow">
+        <td> {{i}}</td>
+        <td> {{j}}</td>
+        <td bgcolor="blue"> {{k}}</td>
+        <td> {{l}}</td>
+    </tr>
+    {% else %}
+    <tr>
+        <td> {{i}}</td>
+        <td> {{j}}</td>
+        <td> {{k}}</td>
+        <td> {{l}}</td>
+    </tr>
+    {% endif %}
+    {% endfor %}
+
+</table>
+
+{% endblock %}

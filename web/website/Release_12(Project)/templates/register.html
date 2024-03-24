@@ -1,0 +1,41 @@
+{% extends "my_template.html"%}
+
+{% block myblock1 %}
+
+<h1>Find all details of course below:</h1><br>
+
+<table border="1" bgcolor="#707070">
+    <tr>
+        <th>Course Title</th>
+        <td>{{course[0][0]}}</td>
+    </tr>
+    <tr>
+        <th>Course Description</th>
+        <td>{{course[0][1]}}</td>
+    </tr>
+    <tr>
+        <th>Course Prequisites</th>
+        <td>{{course[0][2]}}</td>
+    </tr>
+    <tr>
+        <th>Course Learnings</th>
+        <td>{{course[0][3]}}</td>
+    </tr>
+    <tr>
+        <th>Course Duration (Days)</th>
+        <td>{{course[0][4]}} Days</td>
+    </tr>
+    <tr>
+        <th>Course Creator</th>
+        <td>{{course[0][5]}}</td>
+    </tr>
+    <tr>
+        <th>Students Enrolled</th>
+        <td>{{course[0][6]}}</td>
+    </tr>
+</table>
+<form action="/registration/{{course[0][0]}}/{{course[0][6]}}">
+<button>Register for this Course</button>
+</form>
+<hr>
+{% endblock %}

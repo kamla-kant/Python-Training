@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to MyWebSite.com</title>
+</head>
+<body>
+<h1>MyLogo</h1>
+
+<hr>
+<nav>
+    <a href="/">Home</a>|
+    <a href="/about">About</a>|
+    <a href="/login">Login</a>|
+    <a href="/report">Report</a>|
+    {% if session['username'] %}
+    <a href="/logout">Logout</a>|
+    <b>Welcome: {{session['username']}}</b>|
+    {%endif%}
+
+</nav>
+<hr>
+
+{% block myblock1 %}
+{% endblock %}
+
+</body>
+</html>

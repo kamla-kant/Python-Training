@@ -1,0 +1,29 @@
+{% extends "my_template.html"%}
+
+{% block myblock1 %}
+
+<h2>Find and register for the courses you wish to learn from below:</h2>
+
+<table border="1" bgcolor="#989898" align="center">
+    <b><tr>
+        <th><h3>Course Title</h3></th>
+        <th><h3>Description</h3></th>
+        <th><h3>Register</h3></th>
+    </tr></b>
+
+    {% for i in all_courses %}
+    <tr>
+        <td><h2><b> {{i[0]}} </b></h2></td>
+        <td> {{i[1]}}</td>
+
+        <td>
+            <form action="/register/{{i[0]}}"><button>view more details</button>
+            </form>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<center><h3>or <a href="/addcourse"> Click here</a> to add a new course into our platform</h3></center>
+
+{% endblock %}

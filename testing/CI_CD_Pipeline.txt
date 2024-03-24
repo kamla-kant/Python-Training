@@ -1,0 +1,43 @@
+# Continuous Integration and Continuous Delivery
+ # (DevOps)
+ #--------------------------
+
+ POINT-1 :
+ #--------------------------
+ # - Development Team:
+ #       -- Develop and release for testing team
+ # - Testing Team :
+ #       -- If they are busy they will take our project later
+ #           else they will take immidietly
+ #       IF THEY ARE BUSY THEN DELAY IN TESTING
+ #       IF ANY ISSUE THEY WILL REPORT BACK TO DEVELOPMENT TEAM
+ # - Development Team:
+ #       -- If they are busy they will take our project later
+ #           else they will take immidietly
+ #       IF THEY ARE BUSY THEN DELAY IN FIXING ISSUE
+ #       IF ISSUE IS FIXED THEN THEY WILL RELEASE FOR TESTING
+ # This will continues till all the issues getting fixed
+ #
+ # FINALLY SOME GOOD DAY THEY WILL RELEASE
+ #
+ #--------------------------
+ # OBSERVATIONS : DELAY, USING MORE RESOURCE
+ #--------------------------
+
+
+ #--------------------------
+ # SOME HOW WE WANTED TO SOLVE THIS PROBLEM
+ # SOLVED : INTRODUCING SOME TECHNOLOGIES & TOOLS
+ # TEAM : DevOps Team
+ # CI/CD : Is a methodology / technologies/ tools which helps
+ #   from coding to deployment and monitoring
+ #--------------------------
+
+ #--------------------------
+ # CI/CD tools: Ex: GitLab, Github, jenkins and many more
+ #--------------------------
+ # We will try to create CI/CD pipeline for our testing
+ # Advantage is,
+ # if we check in the code, automatically testing will be taken
+ # care by GIT Lab CI/CD pipeline
+ #--------------------------

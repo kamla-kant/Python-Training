@@ -1,0 +1,25 @@
+{% extends "my_template.html"%}
+​
+{% block myblock1 %}
+
+<h2 style="text-align: center;">Please, Login to Academia</h2>
+
+<form action="/validatelogin" method="post">
+    <div class="container"> 
+        <br>
+        User Name : <input type="text" name="uname" placeholder="Enter Username" required/>
+        <br>
+        <br>
+        Password  : <input type="password" name="pw" placeholder="Enter Password" required/>
+        <br>
+        <br>
+                    <button type="submit">Login</button>
+        <br>
+        <br>
+        <a href="/createaccount" style="font-size: 20px; margin-left: 30%;">New User? Register Here.</a>
+    </div> 
+</form>
+
+
+
+{% endblock %}
